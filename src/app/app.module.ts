@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddPostsComponent } from './add-posts/add-posts.component';
 import { RouterModule, Routes } from '@angular/router';
 import { combineLatest } from 'rxjs';
+import { ViewPostsComponent } from './view-posts/view-posts.component';
 
 const myRoute:Routes=[
   {
@@ -16,7 +17,8 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AddPostsComponent
+    AddPostsComponent,
+    ViewPostsComponent
   ],
   imports: [
     BrowserModule,
