@@ -7,18 +7,28 @@ import { AddPostsComponent } from './add-posts/add-posts.component';
 import { RouterModule, Routes } from '@angular/router';
 import { combineLatest } from 'rxjs';
 import { ViewPostsComponent } from './view-posts/view-posts.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddPostsComponent
+  },
+  {
+    path:"view",
+    component:ViewPostsComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
   ]
 @NgModule({
   declarations: [
     AppComponent,
     AddPostsComponent,
-    ViewPostsComponent
+    ViewPostsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
