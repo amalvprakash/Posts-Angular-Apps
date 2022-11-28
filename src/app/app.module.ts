@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { combineLatest } from 'rxjs';
 import { ViewPostsComponent } from './view-posts/view-posts.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -33,7 +34,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
